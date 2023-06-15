@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>學生註冊</title>
+    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js/dist/web3.min.js"></script>
+    
+</head>
+<body>
+    <style type = "text/css">
+        p        { font-size: 1.6em;
+                   font-family: "Perpetua" ;}
+        p::first-letter {font-size: 1.5em; }
+        input    { font-weight: 600;}
+        .special {color: black; }
+        body{
+            background-image: url("2.jpg");
+            position: absolute;
+            
+        }
+        div{
+            height:550px ;
+            width:450px ;
+            border-style: solid;
+            border-width: 3px;
+            text-align: left;
+            position:absolute;
+            left: 700px;
+            top: 200px;
+            background-color: whitesmoke;
+            background:rgba(255,255,255,0.7);
+        }
+        .a1{
+            background-color: transparent;
+            color: firebrick;
+            border-width: 0px;
+            height:350px ;
+            width: 800px;
+            font-size: 1.5em;
+            position:absolute;
+            left: 735px;
+            top: 50px;
+        }
+        .b1{
+            border-width: 0px;
+            background-color: transparent;
+            left : 170px;
+            top: 500px;
+        }
+    </style>
+
+
+    <div class = "a1">
+        <h1>刊登學生案件資料</h1>
+    </div>
+    <div>
+        <form>
+        <p>
+            <label for="name">姓名:
+            <input type="text" id="name" required></label>
+        </p>
+        <p>
+            <label for="age">年紀:
+            <input type="number" id="age" required></label>
+        </p>
+        <p>
+            <label for="phone">手機:
+            <input type="text" id="phone" required></label>
+        </p>
+        <p>
+            <label for="email">電子郵件:
+            <input type="email" id="email" required></label>
+        </p>
+        <p>
+            <label for="location">地區:
+            <input type="text" id="location" required></label>
+        </p>
+        <p>
+            <label for="subject">需求科目:
+            <input type="text" id="subject" required></label>
+        </p>
+        <div class ="b1">
+            <button type="button" id="regButton" style="width:70px;height:30px">刊登</button>
+        </div>
+        </form>
+
+    <script>
+        // Bind registerTeacher function to button click event
+        //var registerButton = document.getElementById("registerButton");
+        //registerButton.addEventListener("click", registerTeacher);
+    </script>
+    <script src="reg_student.js"></script>
+
+
+    
+</body>
+</html>

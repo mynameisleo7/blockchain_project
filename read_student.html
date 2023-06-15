@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>讀取合約資料</title>
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.3.4/dist/web3.min.js"></script>
+    
+</head>
+<body>
+    <style type = "text/css">
+        p        { font-size: 1.6em;
+                   font-family: "Perpetua" ;}
+        p::first-letter {font-size: 1.5em; }
+        input    { font-weight: 600;}
+        .special {color: black; }
+        body{
+            background-image: url("2.jpg");
+            position: absolute;
+            
+        }
+        div{
+            height:680px ;
+            width:500px ;
+            text-align: left;
+            position:absolute;
+            left: 700px;
+            top: 150px;
+        }
+        .a1{
+            background-color: transparent;
+            color: firebrick;
+            border-width: 0px;
+            height:350px ;
+            width: 800px;
+            font-size: 1.6em;
+            position:absolute;
+            left: 820px;
+            top: 50px;
+        }
+        .b1{
+            border-width: 0px;
+            background-color: transparent;
+            left : 170px;
+            top: 550px;
+        }
+    </style>
+
+    <div class = "a1">
+        <h1>學生資料</h1>
+    </div>
+
+    <div>
+        <p id="name">姓名：Loading...</p>
+        <p id="age">年齡：Loading...</p>
+        <p id="phone">電話：Loading...</p>
+        <p id="email">信箱：Loading...</p>
+        <p id="location">地區：Loading...</p>
+        <p id="subject">需求科目：Loading...</p>
+        <div class ="b1">
+            <button id="closeButton" style="width:70px;height:30px">返回上頁</button>
+        </div>
+
+</body>
+<script src="read_student.js"></script>
+</html>
